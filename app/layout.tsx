@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import "../scss/globalStyle.scss";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+import ScrollToTop from "@/components/scrollToTop";
 const roboto = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,9 +22,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body style={{ height: "10000px" }} className={roboto.className}>
+            <body className={roboto.className}>
                 <Header />
                 {children}
+                <ScrollToTop />
                 <Footer />
             </body>
         </html>
