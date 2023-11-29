@@ -6,11 +6,11 @@ const Slogan = () => {
             <Container className="d-flex justify-content-center">
                 <div className="d-flex flex-column gap-3 align-items-center w-75">
                     <p className="fs-3 text-center">
-                        "Cuộc đời mình là do chính mình quyết định. Con đường đã
+                        Cuộc đời mình là do chính mình quyết định. Con đường đã
                         vạch ra, dù khó đến cũng cố gắng đi đến cùng. Bỏ cuộc
                         sớm thì làm sao gặt hái được quả ngọt? Chiến thắng đẹp
                         nhất là chiến thắng chính mình, để mình tiến bộ hơn,
-                        vươn xa hơn."
+                        vươn xa hơn.
                     </p>
                     <div className="author">
                         <div className="d-flex gap-2 align-items-center">

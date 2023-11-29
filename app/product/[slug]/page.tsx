@@ -58,7 +58,7 @@ function Product({ params }: { params: { slug: string } }) {
                 description="Tired of looking at a blank page? Jump start projects by simply typing your idea. Stress test headlines, brainstorm campaigns, personalize pitches, and more."
                 thumbnail="/images/product-tagging/prompt_visual.webp"
             />
-            {/* <Slogan /> */}
+            <Slogan />
             <ContactHome />
         </>
     );
