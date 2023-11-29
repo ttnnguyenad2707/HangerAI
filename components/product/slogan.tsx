@@ -21,6 +21,7 @@ const Slogan = () => {
                                         className="rounded-5"
                                         width={70}
                                         height={70}
+                                        alt=""
                                     />
                                 </div>
                                 <div className="info">
