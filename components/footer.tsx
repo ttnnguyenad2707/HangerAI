@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                                 <div className="d-flex flex-column gap-3">
                                     <div className="logo-brand d-flex gap-2 align-items-center">
                                         <Image
-                                            src="./images/logo/logo-hanger.png"
+                                            src="/images/logo/logo-hanger.png"
                                             height={`100%`}
                                             width={60}
                                         />

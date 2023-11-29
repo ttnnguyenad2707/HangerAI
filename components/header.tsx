@@ -16,7 +16,7 @@ const Header: React.FC = () => {
                 <Navbar expand="lg" className="bg-body ">
                     <Navbar.Brand href="/" className="fs-5 fw-bolder me-5">
                         <Image
-                            src="./images/logo/logo-hanger.png"
+                            src="/images/logo/logo-hanger.png"
                             height="100%"
                             width="40px"
                             className="me-2"
@@ -33,13 +33,13 @@ const Header: React.FC = () => {
                                 className="fs-5 fw-bolder cs-nav-item"
                                 id="basic-nav-dropdown"
                             >
-                                <NavDropdown.Item href="/product-tagging">
+                                <NavDropdown.Item href="/product/product-tagging">
                                     <Stack
                                         className="py-2"
                                         direction="horizontal"
                                         gap={4}
                                     >
-                                        <Image src="./images/landing-page/image_studio_icon.svg"></Image>
+                                        <Image src="/images/landing-page/image_studio_icon.svg"></Image>
                                         <div className="content-product-nav">
                                             <div className="fs-6 fw-normal product-nav-title">
                                                 Product tagging
@@ -50,13 +50,30 @@ const Header: React.FC = () => {
                                         </div>
                                     </Stack>
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="/visual-dressing-room2">
+                                <NavDropdown.Item href="/product/visual-dressing-room">
                                     <Stack
                                         className="py-2"
                                         direction="horizontal"
                                         gap={4}
                                     >
-                                        <Image src="./images/landing-page/image_studio_icon.svg"></Image>
+                                        <Image src="/images/landing-page/image_studio_icon.svg"></Image>
+                                        <div className="content-product-nav">
+                                            <div className="fs-6 fw-normal product-nav-title">
+                                                visual-dressing-room
+                                            </div>
+                                            <div className="fw-light fs-6">
+                                                visual-dressing-room
+                                            </div>
+                                        </div>
+                                    </Stack>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/product/outfit-recommendation">
+                                    <Stack
+                                        className="py-2"
+                                        direction="horizontal"
+                                        gap={4}
+                                    >
+                                        <Image src="/images/landing-page/image_studio_icon.svg"></Image>
                                         <div className="content-product-nav">
                                             <div className="fs-6 fw-normal product-nav-title">
                                                 OutFit Recommendation
@@ -67,36 +84,19 @@ const Header: React.FC = () => {
                                         </div>
                                     </Stack>
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="/outfit-recommendation">
+                                <NavDropdown.Item href="/product/ai-photoshoots-studio-design">
                                     <Stack
                                         className="py-2"
                                         direction="horizontal"
                                         gap={4}
                                     >
-                                        <Image src="./images/landing-page/image_studio_icon.svg"></Image>
+                                        <Image src="/images/landing-page/image_studio_icon.svg"></Image>
                                         <div className="content-product-nav">
                                             <div className="fs-6 fw-normal product-nav-title">
-                                                OutFit Recommendation
+                                                ai-photoshoots-studio-design
                                             </div>
                                             <div className="fw-light fs-6">
-                                                OutFit Recommendation
-                                            </div>
-                                        </div>
-                                    </Stack>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="/ai-photoshoots-studio-design">
-                                    <Stack
-                                        className="py-2"
-                                        direction="horizontal"
-                                        gap={4}
-                                    >
-                                        <Image src="./images/landing-page/image_studio_icon.svg"></Image>
-                                        <div className="content-product-nav">
-                                            <div className="fs-6 fw-normal product-nav-title">
-                                                OutFit Recommendation
-                                            </div>
-                                            <div className="fw-light fs-6">
-                                                OutFit Recommendation
+                                                ai-photoshoots-studio-design
                                             </div>
                                         </div>
                                     </Stack>

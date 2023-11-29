@@ -18,7 +18,13 @@ export default function Home() {
     ];
     return (
         <React.Fragment>
-            <Banner />
+            <Banner
+                title="Supercharge your NFT Adventure"
+                description="Find the right NFT collections to buy within the platform."
+                buttonText="View in HangerAI"
+                linkButton="#"
+                thumbnail="/images/landing-page/banner.png"
+            />
             <ContentCol />
             <AboutProduct
                 header="Adapts so that you can stay in the flow"

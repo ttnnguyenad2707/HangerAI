@@ -17,6 +17,8 @@ p {
     text-align: center;
     border: none;
     color: $color-text-white;
+    text-decoration: none;
+
 }
 
 .button-secondary {
@@ -30,6 +32,7 @@ p {
     line-height: 1.2;
     text-align: center;
     color: $color-text-primary;
+
 
     &:hover {
         background-color: transparent;
@@ -51,4 +54,8 @@ p {
 
 .section-py-80 {
     padding: 80px 0;
+}
+
+.section-my-80 {
+    margin: 80px 0;
 }

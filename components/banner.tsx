@@ -1,7 +1,18 @@
+import Link from "next/link";
 import React from "react";
 import { Col, Container, Image, Row, Stack } from "react-bootstrap";
+import { UrlObject } from "url";
 
-const Banner: React.FC = () => {
+interface BannerProps {
+    tag?: string;
+    title: string;
+    description: string;
+    buttonText?: string;
+    linkButton?: string | UrlObject;
+    thumbnail: string;
+}
+
+const Banner: React.FC<BannerProps> = (props) => {
     return (
         <React.Fragment>
             <Container className="py-5">
@@ -11,26 +22,39 @@ const Banner: React.FC = () => {
                             direction="vertical"
                             className="justify-content-center h-100 gap-3"
                         >
-                            <h2 className="fw-bolder fs-0">
-                                Supercharge <br></br>your NFT Adventure
-                            </h2>
+                            {props.tag && (
+                                <h3
+                                    className="fs-5 opacity-50"
+                                    style={{ letterSpacing: "5.4px" }}
+                                >
+                                    <i className="bi bi-stars"></i>
+                                    <span className="ps-2">{props.tag}</span>
+                                </h3>
+                            )}
+
+                            <h2 className="fw-bolder fs-1">{props.title}</h2>
                             <p className="fs-5 fw-medium opacity-50">
-                                Find the right NFT collections to buy within the
-                                platform.
+                                {props.description}
                             </p>
-                            <button
-                                className="flex-grow-0 button-primary"
-                                style={{ width: "fit-content" }}
-                            >
-                                <span className="me-2">View in HangerAI</span>
-                                <i className="bi bi-arrow-right"></i>
-                            </button>
+                            {props.buttonText && props.linkButton && (
+                                <Link
+                                    href={props.linkButton}
+                                    className="flex-grow-0 button-primary"
+                                    style={{ width: "fit-content" }}
+                                >
+                                    <span className="me-2">
+                                        {props.buttonText}
+                                    </span>
+                                    <i className="bi bi-arrow-right"></i>
+                                </Link>
+                            )}
                         </Stack>
                     </Col>
                     <Col>
                         <Image
-                            src="./images/landing-page/banner.png"
+                            src={props.thumbnail}
                             width="100%"
+                            className="rounded-4"
                         ></Image>
                     </Col>
                 </Row>

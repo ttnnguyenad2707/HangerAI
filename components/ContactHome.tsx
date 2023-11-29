@@ -6,7 +6,7 @@ const ContactHome: React.FC = () => {
     return (
         <div className="component-contact-home">
             <Image
-                src="./images/landing-page/home_wall.webp"
+                src="/images/landing-page/home_wall.webp"
                 height={650}
                 width={`100%`}
                 className="object-fit-cover image"
