@@ -80,8 +80,8 @@ const GetInTouch: React.FC = () => {
                             <div>
                                 <h6 className="fw-bolder fs-4">Chat with us</h6>
                                 <p>
-                                    If you'd prefer to chat in real time with
-                                    our support team, were online Monday to
+                                    If you&apos;d prefer to chat in real time
+                                    with our support team, were online Monday to
                                     Friday whatever your time zone.
                                 </p>
                                 <button className="button-primary fs-6 py-2">
