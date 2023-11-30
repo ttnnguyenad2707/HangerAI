@@ -54,6 +54,11 @@ p {
 
 .section-py-80 {
     padding: 80px 0;
+
+    @include respond(phone) {
+        padding: 20px 0;
+    }
+
 }
 
 .section-my-80 {

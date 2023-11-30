@@ -14,7 +14,10 @@ const Header: React.FC = () => {
         <div className={`${sticky ? "sticky-menu" : ""} bg-white`}>
             <Container>
                 <Navbar expand="lg" className="bg-body ">
-                    <Navbar.Brand href="/" className="fs-5 fw-bolder me-5">
+                    <Navbar.Brand
+                        href="/"
+                        className="fs-5 fw-bolder me-5 d-flex align-items-center"
+                    >
                         <Image
                             src="/images/logo/logo-hanger.png"
                             height="100%"
@@ -110,13 +113,13 @@ const Header: React.FC = () => {
                                 About me
                             </Nav.Link>
                             <Nav.Link
-                                href="#help"
+                                href="/help"
                                 className="cs-nav-item fs-5 fw-bolder "
                             >
                                 Help
                             </Nav.Link>
                             <Nav.Link
-                                href="#contact"
+                                href="/contact"
                                 className="fs-5 fw-bolder cs-nav-item"
                             >
                                 Contact

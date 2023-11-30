@@ -7,6 +7,7 @@ import ContentCol from "@/components/content-col";
 import Founder from "@/components/founder";
 import ImageText from "@/components/imageText";
 import React from "react";
+import Feedback from "@/components/feedback";
 
 export default function Home() {
     const images = [
@@ -41,6 +42,35 @@ export default function Home() {
                 background={false}
             />
             <ImageText />
+            <Feedback
+                Feedbacks={[
+                    {
+                        author: "Nguyen Tran",
+                        job: "Developer",
+                        title: "AI use so good",
+                        description:
+                            "It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, ",
+                        star: 5,
+                    },
+                    {
+                        author: "Nguyen Tran",
+                        job: "Developer",
+                        title: "AI use so good",
+                        description:
+                            "It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, ",
+                        star: 5,
+                    },
+                    {
+                        author: "Nguyen Tran",
+                        job: "Developer",
+                        title: "AI use so good",
+                        description:
+                            "It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, ",
+                        star: 5,
+                    },
+                ]}
+                direction="right"
+            />
             <Founder />
             <ImageMarquee
                 content={[

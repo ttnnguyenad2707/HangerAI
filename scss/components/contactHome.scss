@@ -1,18 +1,12 @@
 .component-contact-home {
     position: relative;
+    background-color: #f1f1f2;
+    padding: 150px 0;
 
     .text {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        transform: translateY(-50%);
+
         margin: auto;
 
-        .form {
-            display: flex;
-            gap: 20px;
 
-        }
     }
 }
