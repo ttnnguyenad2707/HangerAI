@@ -80,8 +80,10 @@ const GetInTouch: React.FC = () => {
                     <Col md={6}>
                         <div className="info py-3 p-md-4 shadow-lg rounded-4 h-100">
                             <div>
-                                <h6 className="fw-bolder fs-4">Chat with us</h6>
-                                <p>
+                                <h6 className="fw-bolder fs-4 mb-3">
+                                    Chat with us
+                                </h6>
+                                <p className="mb-3">
                                     If you&apos;d prefer to chat in real time
                                     with our support team, were online Monday to
                                     Friday whatever your time zone.
@@ -91,7 +93,9 @@ const GetInTouch: React.FC = () => {
                                 </button>
                             </div>
                             <div className="d-flex flex-column gap-1 mt-4">
-                                <h6 className="fw-bolder fs-4 ">Follow us</h6>
+                                <h6 className="fw-bolder fs-4 mb-3">
+                                    Follow us
+                                </h6>
                                 <div className="d-flex list-contact gap-4">
                                     <Link
                                         href={founder.contact.facebook}
@@ -124,7 +128,9 @@ const GetInTouch: React.FC = () => {
                                 </div>
                             </div>
                             <div className="mt-4">
-                                <h6 className="fw-bolder fs-4">Our address</h6>
+                                <h6 className="fw-bolder fs-4 mb-3">
+                                    Our address
+                                </h6>
                                 <p className="mb-1">
                                     Geckoboard, Third floor, 60 Worship
                                 </p>
