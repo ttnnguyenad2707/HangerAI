@@ -58,7 +58,7 @@ const AboutProduct: React.FC<AboutProductProps> = (props) => {
                     >
                         {props.subheader}
                     </p>
-                    <h2 className="fs-0  text-center">{props.header}</h2>
+                    <h2 className="fs-1  text-center">{props.header}</h2>
                     <div
                         className={`aboutProduct-gird template-grid-${props.template} pt-4`}
                     >
@@ -70,7 +70,7 @@ const AboutProduct: React.FC<AboutProductProps> = (props) => {
                             {aboutProducts.map((about, index) => (
                                 <div
                                     key={index}
-                                    className={`fs-3 opacity-50 title-about-product ${
+                                    className={`fs-4 opacity-50 title-about-product ${
                                         index === selectedItem
                                             ? "opacity-100"
                                             : ""

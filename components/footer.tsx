@@ -15,8 +15,8 @@ const Footer: React.FC = () => {
         <div>
             <div className="component-footer py-5">
                 <Container>
-                    <Row className="gap-3 gap-md-0">
-                        <Col md={3}>
+                    <div className="d-flex justify-content-between">
+                        <div style={{ width: "35%" }} className="pe-3">
                             <div className="logo">
                                 <div className="d-flex flex-column gap-3">
                                     <div className="logo-brand d-flex gap-2 align-items-center">
@@ -25,50 +25,46 @@ const Footer: React.FC = () => {
                                             height={`100%`}
                                             width={60}
                                         />
-                                        <span className="fs-3 fw-bolder">
+                                        <span className="fs-4 fw-bolder">
                                             HangerAI
                                         </span>
                                     </div>
                                     <div className="about-us">
-                                        <p>
-                                            The enterprise-grade generative AI
-                                            app that empowers everyone to
-                                            express their unique imagination.
+                                        <p className="fs-6 mb-3">
+                                            Our AI tools simplify product
+                                            photoshoots, optimize text
+                                            extraction, and help your business
+                                            build a professional-looking image
+                                            system.
                                         </p>
                                     </div>
-                                    <div className="address d-flex flex-column gap-3">
-                                        <div className="address-item d-flex gap-3">
-                                            <i className="bi bi-geo-alt text-danger"></i>
-                                            <span>
-                                                53 Dịch Vọng, Cầu Giấy, Hà Nội
-                                            </span>
-                                        </div>
-                                        <div className="address-item d-flex gap-3">
-                                            <i className="bi bi-telephone text-success"></i>
-                                            <span>0943895292</span>
-                                        </div>
-                                        <div className="address-item d-flex gap-3">
-                                            <i className="bi bi-envelope text-danger-emphasis"></i>
-                                            <span>
-                                                trantrungnguyenad@gmail.com
-                                            </span>
-                                        </div>
+                                    <div className="d-flex list-contact gap-4">
+                                        <Link
+                                            href={founder.contact.facebook}
+                                            target="_blank"
+                                            className="contact-item fs-3"
+                                        >
+                                            <i className="bi bi-facebook"></i>
+                                        </Link>
+
+                                        <Link
+                                            href={founder.contact.facebook}
+                                            target="_blank"
+                                            className="contact-item fs-3"
+                                        >
+                                            <i className="bi bi-linkedin"></i>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
-                        </Col>
-                        <Col md={3}>
+                        </div>
+                        <div className="">
                             <div className="product">
                                 <div className="d-flex flex-column gap-3">
-                                    <div className="fs-2 fw-bolder mb-3">
+                                    <div className="fs-4 fw-bolder mb-3">
                                         Product
                                     </div>
                                     <div className="product-list d-flex flex-column gap-4">
-                                        <div className="product-item">
-                                            <Link href="/">
-                                                OutFit Recommendation
-                                            </Link>
-                                        </div>
                                         <div className="product-item">
                                             <Link href="/">
                                                 Visual Dressing Room
@@ -87,87 +83,82 @@ const Footer: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                        </Col>
-                        <Col md={3}>
+                        </div>
+                        <div className="">
                             <div className="product">
                                 <div className="d-flex flex-column gap-3">
-                                    <div className="fs-2 fw-bolder mb-3">
-                                        About Us
+                                    <div className="fs-4 fw-bolder mb-3">
+                                        Tools
                                     </div>
                                     <div className="product-list d-flex flex-column gap-4">
                                         <div className="product-item">
-                                            <Link href="/">Story</Link>
+                                            <Link href="/">Virtual Try-on</Link>
                                         </div>
                                         <div className="product-item">
-                                            <Link href="/">Values</Link>
+                                            <Link href="/">Visual Model</Link>
                                         </div>
                                         <div className="product-item">
                                             <Link href="/">
-                                                HangerAI journey
+                                                Upscaling Image
                                             </Link>
                                         </div>
                                         <div className="product-item">
-                                            <Link href="/">Careers</Link>
+                                            <Link href="/">
+                                                Background Generative
+                                            </Link>
+                                        </div>
+                                        <div className="product-item">
+                                            <Link href="/">
+                                                Product Recolor
+                                            </Link>
+                                        </div>
+                                        <div className="product-item">
+                                            <Link href="/">Magic Eraser</Link>
+                                        </div>
+                                        <div className="product-item">
+                                            <Link href="/">
+                                                Product Description
+                                            </Link>
+                                        </div>
+                                        <div className="product-item">
+                                            <Link href="/">Generative</Link>
+                                        </div>
+                                        <div className="product-item">
+                                            <Link href="/">
+                                                Content Writing for Product
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </Col>
-                        <Col md={3}>
+                        </div>
+                        <div className="">
                             <div className="product">
                                 <div className="d-flex flex-column gap-3">
-                                    <div className="fs-2 fw-bolder mb-3">
-                                        Contact
+                                    <div className="fs-4 fw-bolder mb-3">
+                                        Company
                                     </div>
                                     <div className="product-list d-flex flex-column gap-4">
-                                        <div className="d-flex gap-1 flex-column">
-                                            <p className="opacity-75">
-                                                Send email for more information
-                                            </p>
-                                            <div className="d-flex gap-3">
-                                                <Form.Control
-                                                    type="email"
-                                                    placeholder="Enter your email ... "
-                                                ></Form.Control>
-                                                <button className="button-primary d-flex">
-                                                    <i className="bi bi-send-plus"></i>
-                                                    <span className="ms-2">
-                                                        Send
-                                                    </span>
-                                                </button>
-                                            </div>
+                                        <div className="product-item">
+                                            <Link href="/">About Us</Link>
                                         </div>
-                                        <div className="d-flex list-contact gap-4">
-                                            <Link
-                                                href={founder.contact.facebook}
-                                                target="_blank"
-                                                className="contact-item fs-3"
-                                            >
-                                                <i className="bi bi-facebook"></i>
-                                            </Link>
-                                            <Link
-                                                href={founder.contact.facebook}
-                                                target="_blank"
-                                                className="contact-item fs-3"
-                                            >
-                                                <i className="bi bi-instagram"></i>
-                                            </Link>
-                                            <Link
-                                                href={founder.contact.facebook}
-                                                target="_blank"
-                                                className="contact-item fs-3"
-                                            >
-                                                <i className="bi bi-twitter"></i>
-                                            </Link>
+                                        <div className="product-item">
+                                            <Link href="/">Pricing</Link>
+                                        </div>
+                                        <div className="product-item">
+                                            <Link href="/">Contact Us</Link>
+                                        </div>
+                                        <div className="product-item">
+                                            <Link href="/">FAQs</Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </Col>
-                    </Row>
+                        </div>
+                    </div>
                 </Container>
             </div>
-            <div className="copyright text-center opacity-50">
+            <div className="container copyright text-center opacity-50 py-4 border-top border-2">
                 Copyright © 2023 HangerAI.
             </div>
         </div>

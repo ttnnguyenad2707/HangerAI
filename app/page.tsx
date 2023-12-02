@@ -42,36 +42,35 @@ export default function Home() {
                 background={false}
             />
             <ImageText />
-            <Feedback
-                Feedbacks={[
-                    {
-                        author: "Nguyen Tran",
-                        job: "Developer",
-                        title: "AI use so good",
-                        description:
-                            "It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, ",
-                        star: 5,
-                    },
-                    {
-                        author: "Nguyen Tran",
-                        job: "Developer",
-                        title: "AI use so good",
-                        description:
-                            "It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, ",
-                        star: 5,
-                    },
-                    {
-                        author: "Nguyen Tran",
-                        job: "Developer",
-                        title: "AI use so good",
-                        description:
-                            "It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, ",
-                        star: 5,
-                    },
-                ]}
-                direction="right"
-            />
-            <Founder />
+            {/* <Feedback
+                    Feedbacks={[
+                        {
+                            author: "Nguyen Tran",
+                            job: "Developer",
+                            title: "AI use so good",
+                            description:
+                                "It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, ",
+                            star: 5,
+                        },
+                        {
+                            author: "Nguyen Tran",
+                            job: "Developer",
+                            title: "AI use so good",
+                            description:
+                                "It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, ",
+                            star: 5,
+                        },
+                        {
+                            author: "Nguyen Tran",
+                            job: "Developer",
+                            title: "AI use so good",
+                            description:
+                                "It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, It so good for me, ",
+                            star: 5,
+                        },
+                    ]}
+                    direction="right"
+                /> */}
             <ImageMarquee
                 content={[
                     {

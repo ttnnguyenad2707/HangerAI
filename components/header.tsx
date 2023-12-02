@@ -28,12 +28,12 @@ const Header: React.FC = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="gap-4">
+                        <Nav className="gap-3">
                             <NavDropdown
                                 autoClose="outside"
                                 align="start"
                                 title="Product"
-                                className="fs-5 fw-bolder cs-nav-item"
+                                className="fs-6 fw-bolder cs-nav-item"
                                 id="basic-nav-dropdown"
                             >
                                 <NavDropdown.Item href="/product/product-tagging">
@@ -108,21 +108,21 @@ const Header: React.FC = () => {
 
                             <Nav.Link
                                 href="#about-me"
-                                className="cs-nav-item fs-5 fw-bolder "
+                                className="cs-nav-item fs-6 fw-bolder "
                             >
-                                About me
+                                Company
                             </Nav.Link>
                             <Nav.Link
                                 href="/help"
-                                className="cs-nav-item fs-5 fw-bolder "
+                                className="cs-nav-item fs-6 fw-bolder "
                             >
-                                Help
+                                Pricing
                             </Nav.Link>
                             <Nav.Link
                                 href="/contact"
-                                className="fs-5 fw-bolder cs-nav-item"
+                                className="fs-6 fw-bolder cs-nav-item"
                             >
-                                Contact
+                                Contact us
                             </Nav.Link>
                         </Nav>
                         <div className="ms-auto">

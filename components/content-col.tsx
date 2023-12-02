@@ -16,11 +16,11 @@ const ContentCol: React.FC = () => {
                     gap={3}
                     className="align-items-center"
                 >
-                    <h1 className="fs-0">
+                    <h1 className="fs-1">
                         <span className="text-color-violet">Anything </span>
                         Imagined
                     </h1>
-                    <p>
+                    <p className="fs-6 mb-3">
                         The generative AI app to supercharge personalized
                         content creation for work
                     </p>

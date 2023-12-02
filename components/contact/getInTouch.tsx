@@ -5,6 +5,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 
+import "../../scss/components/getInTouch.scss";
+
 const founder = {
     contact: {
         facebook: "https://www.facebook.com/",
@@ -12,7 +14,7 @@ const founder = {
 };
 const GetInTouch: React.FC = () => {
     return (
-        <div className="component-get-in-touch section-py-80 ">
+        <div className="component-get-in-touch section-py-80">
             <Container>
                 <div className="title pb-5">
                     <h1 className="fs-0 fw-bolder text-center">Get in touch</h1>
@@ -20,7 +22,7 @@ const GetInTouch: React.FC = () => {
                 <Row>
                     <Col md={6}>
                         <div className="form-contact w-100">
-                            <div className="border border-2 border-black rounded-4 p-4">
+                            <div className="rounded-4 p-4 shadow-lg h-100">
                                 <div className="form-title pb-3 fw-bolder fs-4">
                                     Send us a message
                                 </div>
@@ -76,7 +78,7 @@ const GetInTouch: React.FC = () => {
                         </div>
                     </Col>
                     <Col md={6}>
-                        <div className="info py-3 p-md-4">
+                        <div className="info py-3 p-md-4 shadow-lg rounded-4 h-100">
                             <div>
                                 <h6 className="fw-bolder fs-4">Chat with us</h6>
                                 <p>

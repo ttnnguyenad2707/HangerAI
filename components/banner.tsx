@@ -32,8 +32,8 @@ const Banner: React.FC<BannerProps> = (props) => {
                                 </h3>
                             )}
 
-                            <h2 className="fw-bolder fs-1">{props.title}</h2>
-                            <p className="fs-5 fw-medium opacity-50">
+                            <h2 className="fw-bolder fs-2">{props.title}</h2>
+                            <p className="fs-6 fw-medium opacity-50">
                                 {props.description}
                             </p>
                             {props.buttonText && props.linkButton && (
