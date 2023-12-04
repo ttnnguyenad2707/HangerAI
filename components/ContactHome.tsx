@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import { Form, Image } from "react-bootstrap";
 
 import "../scss/components/contactHome.scss";
+import Link from "next/link";
 const ContactHome: React.FC = () => {
     return (
         <div className="component-contact-home rounded-5">
@@ -15,7 +17,9 @@ const ContactHome: React.FC = () => {
                 </h6>
                 <div className="d-flex gap-3 justify-content-center">
                     <button className="button-primary">Get Started</button>
-                    <button className="button-secondary">View pricing</button>
+                    <Link href="/pricing" className="button-secondary">
+                        View pricing
+                    </Link>
                 </div>
             </div>
         </div>

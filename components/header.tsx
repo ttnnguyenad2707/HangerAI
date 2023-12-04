@@ -113,7 +113,7 @@ const Header: React.FC = () => {
                                 Company
                             </Nav.Link>
                             <Nav.Link
-                                href="/help"
+                                href="/pricing"
                                 className="cs-nav-item fs-6 fw-bolder "
                             >
                                 Pricing
