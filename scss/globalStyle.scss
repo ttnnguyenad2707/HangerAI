@@ -75,6 +75,11 @@ p {
     }
 }
 
+.background-violet {
+    background-image: linear-gradient(25deg, $color-gradient-1, $color-gradient-2) !important;
+
+}
+
 .text-color-violet {
     color: $color-bg-primary;
 }
