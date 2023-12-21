@@ -18,13 +18,34 @@ function Product({ params }: { params: { slug: string } }) {
     let content: Content = {
         Banner: { title: "", description: "", linkButton: "", thumbnail: "" },
     }; // Initialize content
-    // if (params.slug === "product-tagging") {
-    if (true) {
+    if (params.slug === "visual-dressing-room") {
         content = {
             Banner: {
-                title: "AI generated product content",
+                title: "Visual Dressing Room",
                 description:
-                    "AI generated product content delivers meticulously crafted descriptions, leveraging advanced technology to create compelling and accurate portrayals of items, enhancing the consumer experience.",
+                    "Try on clothes online and see how different outfits look on you. No need for models or studios, simply upload product images and let our AI generate your new collection.",
+                linkButton: "#",
+                thumbnail: "/images/product-tagging/product-tagging-banner.jpg",
+            },
+        };
+    }
+    else if (params.slug === "ai-photoshoots-studio-design"){
+        content = {
+            Banner: {
+                title: "AI Photoshoots Studio Design",
+                description:
+                    "Take control of your product photography without ever stepping foot in a studio. Upscale images, boost resolution, generate custom backgrounds, and even more.",
+                linkButton: "#",
+                thumbnail: "/images/product-tagging/product-tagging-banner.jpg",
+            },
+        };
+    }
+    else if (params.slug === "ai-content-writing"){
+        content = {
+            Banner: {
+                title: "AI Content Writing",
+                description:
+                    "Create marketing content effortlessly from product images. Ready for engaging product descriptions, captivating copywriting, and powerful ad script.",
                 linkButton: "#",
                 thumbnail: "/images/product-tagging/product-tagging-banner.jpg",
             },

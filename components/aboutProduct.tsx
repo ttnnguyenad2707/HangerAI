@@ -1,21 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import { Col, Container, Row, Stack } from "react-bootstrap";
 
 import "../scss/components/aboutProduct.scss";
+import { AboutProduct as AboutProductType } from "@/interface/AboutProduct";
 
-interface AboutProduct {
-    title: string;
-    videoId: string;
-}
 
-const aboutProducts: AboutProduct[] = [
-    { title: "Image", videoId: "F5tS5m86bOI" },
-    { title: "Copy", videoId: "F5tS5m86bOI" },
-    { title: "Blog Post", videoId: "F5tS5m86bOI" },
-    { title: "Instagram Ad", videoId: "F5tS5m86bOI" },
-    { title: "Lading Page", videoId: "F5tS5m86bOI" },
-    { title: "Job Post", videoId: "F5tS5m86bOI" },
-];
 
 interface AboutProductProps {
     subheader: string;
@@ -23,18 +12,20 @@ interface AboutProductProps {
     description: string;
     template: number;
     background: boolean;
+    content: AboutProductType[];
 }
 
 const AboutProduct: React.FC<AboutProductProps> = (props) => {
     const [selectedItem, setSelectedItem] = useState<number>(0);
-
+    const [description,setDescription] = useState<string>(props.content[0].description);
     const handleItemClick = (index: number) => {
         setSelectedItem(index);
+        setDescription(props.content[index].description)
     };
     useEffect(() => {
         const interval = setInterval(() => {
             setSelectedItem(
-                (prevItem) => (prevItem + 1) % aboutProducts.length
+                (prevItem) => (prevItem + 1) % props.content.length
             );
         }, 5000);
 
@@ -52,22 +43,16 @@ const AboutProduct: React.FC<AboutProductProps> = (props) => {
                     gap={3}
                     className="align-items-center"
                 >
-                    <p
-                        className="text-color-violet fs-6 m-0"
-                        style={{ letterSpacing: "6.4px" }}
-                    >
-                        {props.subheader}
-                    </p>
-                    <h2 className="fs-1  text-center">{props.header}</h2>
+                    <h2 className="fs-1 text-center">{props.header}</h2>
                     <div
                         className={`aboutProduct-gird template-grid-${props.template} pt-4`}
                     >
                         <Stack
                             direction="vertical"
-                            className="about-product-title-box"
+                            className="about-product-title-box w-100"
                             gap={2}
                         >
-                            {aboutProducts.map((about, index) => (
+                            {props.content.map((about, index) => (
                                 <div
                                     key={index}
                                     className={`fs-4 opacity-50 title-about-product ${
@@ -87,8 +72,8 @@ const AboutProduct: React.FC<AboutProductProps> = (props) => {
                                     ></i>
                                 </div>
                             ))}
+                            <p className="mt-3">{description}</p>
 
-                            <p className="mt-3">{props.description}</p>
                             <button className="button-primary">
                                 <span className="me-2">Learn more</span>{" "}
                                 <i className="bi bi-arrow-right"></i>

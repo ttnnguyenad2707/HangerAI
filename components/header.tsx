@@ -8,6 +8,7 @@ import { Image, Stack } from "react-bootstrap";
 
 import "../scss/components/header.scss";
 import useSticky from "@/hooks/useSticky";
+import Link from "next/link";
 const Header: React.FC = () => {
     const { sticky } = useSticky();
     return (
@@ -36,23 +37,6 @@ const Header: React.FC = () => {
                                 className="fs-6 fw-bolder cs-nav-item"
                                 id="basic-nav-dropdown"
                             >
-                                <NavDropdown.Item href="/product/product-tagging">
-                                    <Stack
-                                        className="py-2"
-                                        direction="horizontal"
-                                        gap={4}
-                                    >
-                                        <Image src="/images/landing-page/image_studio_icon.svg"></Image>
-                                        <div className="content-product-nav">
-                                            <div className="fs-6 fw-normal product-nav-title">
-                                                Product tagging
-                                            </div>
-                                            <div className="fw-light fs-6">
-                                                Product tagging
-                                            </div>
-                                        </div>
-                                    </Stack>
-                                </NavDropdown.Item>
                                 <NavDropdown.Item href="/product/visual-dressing-room">
                                     <Stack
                                         className="py-2"
@@ -62,27 +46,10 @@ const Header: React.FC = () => {
                                         <Image src="/images/landing-page/image_studio_icon.svg"></Image>
                                         <div className="content-product-nav">
                                             <div className="fs-6 fw-normal product-nav-title">
-                                                visual-dressing-room
+                                                Virtual Dressing Room
                                             </div>
                                             <div className="fw-light fs-6">
-                                                visual-dressing-room
-                                            </div>
-                                        </div>
-                                    </Stack>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="/product/outfit-recommendation">
-                                    <Stack
-                                        className="py-2"
-                                        direction="horizontal"
-                                        gap={4}
-                                    >
-                                        <Image src="/images/landing-page/image_studio_icon.svg"></Image>
-                                        <div className="content-product-nav">
-                                            <div className="fs-6 fw-normal product-nav-title">
-                                                OutFit Recommendation
-                                            </div>
-                                            <div className="fw-light fs-6">
-                                                OutFit Recommendation
+                                                Virtual Dressing Room
                                             </div>
                                         </div>
                                     </Stack>
@@ -96,10 +63,27 @@ const Header: React.FC = () => {
                                         <Image src="/images/landing-page/image_studio_icon.svg"></Image>
                                         <div className="content-product-nav">
                                             <div className="fs-6 fw-normal product-nav-title">
-                                                ai-photoshoots-studio-design
+                                                AI Photoshoots Studio Design 
                                             </div>
                                             <div className="fw-light fs-6">
-                                                ai-photoshoots-studio-design
+                                                AI Photoshoots Studio Design
+                                            </div>
+                                        </div>
+                                    </Stack>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/product/ai-content-writing">
+                                    <Stack
+                                        className="py-2"
+                                        direction="horizontal"
+                                        gap={4}
+                                    >
+                                        <Image src="/images/landing-page/image_studio_icon.svg"></Image>
+                                        <div className="content-product-nav">
+                                            <div className="fs-6 fw-normal product-nav-title">
+                                                AI content writing
+                                            </div>
+                                            <div className="fw-light fs-6">
+                                                AI content writing
                                             </div>
                                         </div>
                                     </Stack>
@@ -130,6 +114,12 @@ const Header: React.FC = () => {
                                 <i className="bi bi-box-arrow-in-right"></i>
                                 <span className="ms-2">Login</span>
                             </button>
+                        </div>
+                        <div className="ms-2">
+                            <Link href="#" className="button-primary">
+                                <i className="bi bi-box-arrow-in-right"></i>
+                                <span className="ms-2">Join Free</span>
+                            </Link>
                         </div>
                     </Navbar.Collapse>
                 </Navbar>

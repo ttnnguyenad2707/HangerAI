@@ -8,6 +8,7 @@ import Founder from "@/components/founder";
 import ImageText from "@/components/imageText";
 import React from "react";
 import Feedback from "@/components/feedback";
+import { AboutProduct as AboutProductType  } from "@/interface/AboutProduct";
 
 export default function Home() {
     const images = [
@@ -17,29 +18,46 @@ export default function Home() {
         "./images/logo/logo-hanger.png",
         "./images/logo/logo-hanger.png",
     ];
+    const aboutProductsFirst: AboutProductType[] = [
+        { title: "Virtual Try-on", videoId: "F5tS5m86bOI", description: "Try on clothes online and see how different outfits look on you." },
+        { title: "Upscale Image", videoId: "F5tS5m86bOI", description: "Boost resolution for pixel-perfect close-ups and model shots." },
+        { title: "Background Generator", videoId: "F5tS5m86bOI", description: "Generate custom backgrounds that complement the product." },
+        { title: "Image Recolor", videoId: "F5tS5m86bOI", description: "Find the perfect shade for your product." },
+        { title: "Image Inpainting", videoId: "F5tS5m86bOI", description: "Retouch image, remove and/or generate patterns on product." },
+        { title: "Magic Eraser", videoId: "F5tS5m86bOI", description: "Remove distractions and unwanted objects." },
+    ];
+    const aboutProductsSecond: AboutProductType[] = [
+        { title: "AI Product Descriptions", videoId: "F5tS5m86bOI", description: "Automate product descriptions, enrich product catalog." },
+        { title: "Product Tagging", videoId: "F5tS5m86bOI", description: "Tame the inventories with smart tags for better shopping experience." },
+        { title: "Website/SEO", videoId: "F5tS5m86bOI", description: "Craft impactful copywriting & keywords for skyrocketing search visibility." },
+        { title: "Communications", videoId: "F5tS5m86bOI", description: "Make compelling emails, memos, and more." },
+        { title: "Social Media Marketing", videoId: "F5tS5m86bOI", description: "Transform product images into descriptive Facebook posts, ad copy,.." },
+    ];
     return (
         <React.Fragment>
             <Banner
-                title="Supercharge your NFT Adventure"
-                description="Find the right NFT collections to buy within the platform."
-                buttonText="View in HangerAI"
+                title="Adopt Gen AI in Personalized Content Creation"
+                description="We provide a platform that simplifies product photoshoots and content writing."
+                buttonText="Join Frees"
                 linkButton="#"
                 thumbnail="/images/landing-page/banner.png"
             />
             <ContentCol />
             <AboutProduct
-                header="Adapts so that you can stay in the flow"
+                header="AI Photoshoots Studio Design"
                 subheader="FLOW"
                 description="Pick an out-of-the box template or create your own with just a few clicks. Easily extend or customize rules and workflows to fit Typeface into your natural processes."
                 template={1}
                 background={true}
+                content={aboutProductsFirst}
             />
             <AboutProduct
-                header="Adapts so that you can stay in the flow"
+                header="AI Content Writing"
                 subheader="FLOW"
                 description="Pick an out-of-the box template or create your own with just a few clicks. Easily extend or customize rules and workflows to fit Typeface into your natural processes."
                 template={2}
                 background={false}
+                content={aboutProductsSecond}
             />
             <ImageText />
             {/* <Feedback
@@ -75,28 +93,34 @@ export default function Home() {
                 content={[
                     {
                         thumbnail: "./images/landing-page/marquee/google.png",
-                        title: "OutFit Recommendation",
+                        title: "Virtual Try-on",
                         description:
-                            "Described as providing suggestions or suggestions for clothing combinations tailored to an individual's style, preferences, or occasions.",
+                            "Try on clothes online",
                     },
                     {
                         thumbnail: "./images/landing-page/marquee/youtube.png",
-                        title: "Visual Dressing Room",
+                        title: "Upscale Image",
                         description:
-                            "A Visual Dressing Room is a digital tool allowing users to virtually try on and visualize different clothing items or outfits.A Visual Dressing Room is a digital tool allowing users to virtually try on and visualize different clothing items or outfits.",
+                            "Boost image resolution",
                     },
                     {
                         thumbnail:
                             "./images/landing-page/marquee/instagram.png",
-                        title: "AI Photoshoots Studio Design",
+                        title: "AI Background Generator",
                         description:
-                            "A Visual Dressing Room is a digital tool allowing users to virtually try on and visualize different clothing items or outfits.",
+                            "Generate custom backgrounds.",
                     },
                     {
                         thumbnail: "./images/landing-page/marquee/google.png",
-                        title: "Product Content Generative",
+                        title: "Image Recolor",
                         description:
-                            "A Visual Dressing Room is a digital tool allowing users to virtually try on and visualize different clothing items or outfits.",
+                            "Adjust image colors without Photoshop.",
+                    },
+                    {
+                        thumbnail: "./images/landing-page/marquee/google.png",
+                        title: "Social Media Marketing",
+                        description:
+                            "Create descriptive Facebook posts, ad copy,...",
                     },
                 ]}
                 direction="left"
@@ -105,28 +129,40 @@ export default function Home() {
                 content={[
                     {
                         thumbnail: "./images/landing-page/marquee/google.png",
-                        title: "OutFit Recommendation",
+                        title: "Image Inpainting",
                         description:
-                            "Described as providing suggestions or suggestions for clothing combinations tailored to an individual's style, preferences, or occasions.",
+                            "Retouch image, remove, generate patterns on product.",
                     },
                     {
                         thumbnail: "./images/landing-page/marquee/youtube.png",
-                        title: "Visual Dressing Room",
+                        title: "Magic Eraser",
                         description:
-                            "A Visual Dressing Room is a digital tool allowing users to virtually try on and visualize different clothing items or outfits.A Visual Dressing Room is a digital tool allowing users to virtually try on and visualize different clothing items or outfits.",
+                            "Remove any distractions and unwanted objects.",
                     },
                     {
                         thumbnail:
                             "./images/landing-page/marquee/instagram.png",
-                        title: "AI Photoshoots Studio Design",
+                        title: "AI Product Descriptions",
                         description:
-                            "A Visual Dressing Room is a digital tool allowing users to virtually try on and visualize different clothing items or outfits.",
+                            "Extract product details from image, enrich product catalog.",
                     },
                     {
                         thumbnail: "./images/landing-page/marquee/google.png",
-                        title: "Product Content Generative",
+                        title: "Product Tagging",
                         description:
-                            "A Visual Dressing Room is a digital tool allowing users to virtually try on and visualize different clothing items or outfits.",
+                            "Add smart tags for inventories",
+                    },
+                    {
+                        thumbnail: "./images/landing-page/marquee/google.png",
+                        title: "Website/SEO",
+                        description:
+                            "Craft impactful copywriting & SEO keywords",
+                    },
+                    {
+                        thumbnail: "./images/landing-page/marquee/google.png",
+                        title: "Communications",
+                        description:
+                            "Create emails, memos, and more.",
                     },
                 ]}
                 direction="right"

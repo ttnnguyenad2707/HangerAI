@@ -11,15 +11,16 @@ const ImageText: React.FC = () => {
                 width={`100%`}
                 className="object-fit-cover image"
             />
-            <div className="bg-white py-4 px-4 rounded text w-50">
+            <div className="bg-white py-4 px-4 rounded text w-75">
                 <h6 className="text-center opacity-50 subheader mb-4">
-                    VALUE DELIVERED
+                    AIL-IN-ONE PLATFORM
                 </h6>
                 <h1 className="text-center header">
-                    Create 10x more{" "}
-                    <span className="text-color-violet">personalized</span>{" "}
-                    content faster
+                    50+ Hours Saved, Millions Reached: 
+                    <span className="text-color-violet">Automate </span>{" "}
+                    Images, Text, Ads
                 </h1>
+                <p className="text-center">---------------------</p>
             </div>
         </div>
     );

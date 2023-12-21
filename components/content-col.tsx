@@ -16,21 +16,25 @@ const ContentCol: React.FC = () => {
                     gap={3}
                     className="align-items-center"
                 >
+                    <p
+                        className="text-color-violet fs-6 m-0"
+                        style={{ letterSpacing: "6.4px" }}
+                    >
+                        WHAT WE DO
+                    </p>
                     <h1 className="fs-1">
-                        <span className="text-color-violet">Anything </span>
-                        Imagined
+                        Virtual Dressing Room
                     </h1>
-                    <p className="fs-6 mb-3">
-                        The generative AI app to supercharge personalized
-                        content creation for work
+                    <p className="fs-6">
+                        Try on clothes online and see how different outfits look on you.
                     </p>
                     <Stack
                         direction="horizontal"
                         gap={4}
                         className="justify-content-center"
                     >
-                        <button className="button-primary">
-                            <span className="me-2">Join waitlist</span>
+                        <button className="button-secondary">
+                            <span className="me-2">View details</span>
                             <i className="bi bi-arrow-right-short"></i>
                         </button>
                         <button

@@ -6,7 +6,7 @@
     display: grid;
 
     &.template-grid-1 {
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 300px 1fr;
 
         .about-product-title-box {
             order: 0;
@@ -19,7 +19,7 @@
     }
 
     &.template-grid-2 {
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 1fr 300px;
 
         .about-product-title-box {
             order: 1;

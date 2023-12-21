@@ -17,7 +17,7 @@ const GetInTouch: React.FC = () => {
         <div className="component-get-in-touch section-py-80">
             <Container>
                 <div className="title pb-5">
-                    <h1 className="fs-0 fw-bolder text-center">Get in touch</h1>
+                    <h1 className="fs-0 fw-bolder text-center">Contact Us</h1>
                 </div>
                 <Row>
                     <Col md={6}>
@@ -28,26 +28,58 @@ const GetInTouch: React.FC = () => {
                                 </div>
                                 <div className="d-flex flex-column gap-1">
                                     <Form>
+                                        <div className="d-flex justify-content-between gap-4">
                                         <InputGroup className="mb-3">
                                             <InputGroup.Text id="your-name">
                                                 <i className="bi bi-person"></i>
                                             </InputGroup.Text>
                                             <Form.Control
                                                 type="text"
-                                                placeholder="Your name"
+                                                placeholder="First Name"
                                                 aria-describedby="your-name"
                                             />
                                         </InputGroup>
+                                        <InputGroup className="mb-3">
+                                            <InputGroup.Text id="your-name">
+                                                <i className="bi bi-person"></i>
+                                            </InputGroup.Text>
+                                            <Form.Control
+                                                type="text"
+                                                placeholder="Last name"
+                                                aria-describedby="your-name"
+                                            />
+                                        </InputGroup>
+                                        </div>
                                         <InputGroup className="mb-3">
                                             <InputGroup.Text id="email">
                                                 <i className="bi bi-envelope"></i>
                                             </InputGroup.Text>
                                             <Form.Control
                                                 type="email"
-                                                placeholder="Email"
+                                                placeholder="Work email"
                                                 aria-describedby="email"
                                             />
                                         </InputGroup>
+                                        <InputGroup className="mb-3">
+                                            <InputGroup.Text id="company">
+                                                <i className="bi bi-buildings"></i>
+                                            </InputGroup.Text>
+                                            <Form.Control
+                                                type="text"
+                                                placeholder="Company"
+                                                aria-describedby="company"
+                                            />
+                                        </InputGroup>
+                                        <InputGroup className="mb-3">
+                                            <InputGroup.Text id="subject">
+                                                <i className="bi bi-patch-minus"></i>
+                                            </InputGroup.Text>
+                                            <Form.Control
+                                                type="text"
+                                                placeholder="Your subject"
+                                                aria-describedby="subject"
+                                            />
+                                        </InputGroup>                                        
                                         <InputGroup className="mb-3">
                                             <InputGroup.Text
                                                 id="message"
@@ -61,7 +93,7 @@ const GetInTouch: React.FC = () => {
                                                 rows={7}
                                             />
                                         </InputGroup>
-                                        <div className="d-flex justify-content-center">
+                                        <div className="d-flex">
                                             <button
                                                 className="button-primary"
                                                 type="submit"
@@ -84,9 +116,7 @@ const GetInTouch: React.FC = () => {
                                     Chat with us
                                 </h6>
                                 <p className="mb-3">
-                                    If you&apos;d prefer to chat in real time
-                                    with our support team, were online Monday to
-                                    Friday whatever your time zone.
+                                    Share your thoughts, questions, or partnership proposals with us.
                                 </p>
                                 <button className="button-primary fs-6 py-2">
                                     Start a conversation
@@ -103,21 +133,7 @@ const GetInTouch: React.FC = () => {
                                         className="contact-item fs-3"
                                     >
                                         <i className="bi bi-facebook"></i>
-                                    </Link>
-                                    <Link
-                                        href={founder.contact.facebook}
-                                        target="_blank"
-                                        className="contact-item fs-3"
-                                    >
-                                        <i className="bi bi-instagram"></i>
-                                    </Link>
-                                    <Link
-                                        href={founder.contact.facebook}
-                                        target="_blank"
-                                        className="contact-item fs-3"
-                                    >
-                                        <i className="bi bi-twitter"></i>
-                                    </Link>
+                                    </Link>                                    
                                     <Link
                                         href={founder.contact.facebook}
                                         target="_blank"
