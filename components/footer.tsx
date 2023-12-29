@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                                         </div>
                                         <div className="product-item">
                                             <Link href="/">
-                                                Product Content Generative
+                                                AI Content Writing
                                             </Link>
                                         </div>
                                     </div>
@@ -95,21 +95,19 @@ const Footer: React.FC = () => {
                                             <Link href="/">Virtual Try-on</Link>
                                         </div>
                                         <div className="product-item">
-                                            <Link href="/">Visual Model</Link>
+                                            <Link href="/">Upscale Image</Link>
                                         </div>
                                         <div className="product-item">
                                             <Link href="/">
-                                                Upscaling Image
+                                                AI Background Generator
                                             </Link>
                                         </div>
                                         <div className="product-item">
-                                            <Link href="/">
-                                                Background Generative
-                                            </Link>
+                                            <Link href="/">Image Recolor</Link>
                                         </div>
                                         <div className="product-item">
                                             <Link href="/">
-                                                Product Recolor
+                                                Image Inpainting
                                             </Link>
                                         </div>
                                         <div className="product-item">
@@ -117,15 +115,23 @@ const Footer: React.FC = () => {
                                         </div>
                                         <div className="product-item">
                                             <Link href="/">
-                                                Product Description
+                                                AI Product Description
                                             </Link>
                                         </div>
                                         <div className="product-item">
-                                            <Link href="/">Generative</Link>
+                                            <Link href="/">
+                                                Product Tagging
+                                            </Link>
+                                        </div>
+                                        <div className="product-item">
+                                            <Link href="/">Website/SEO</Link>
+                                        </div>
+                                        <div className="product-item">
+                                            <Link href="/">Communications</Link>
                                         </div>
                                         <div className="product-item">
                                             <Link href="/">
-                                                Content Writing for Product
+                                                Social Media Marketing
                                             </Link>
                                         </div>
                                     </div>

@@ -4,8 +4,6 @@ import { Col, Container, Row, Stack } from "react-bootstrap";
 import "../scss/components/aboutProduct.scss";
 import { AboutProduct as AboutProductType } from "@/interface/AboutProduct";
 
-
-
 interface AboutProductProps {
     subheader: string;
     header: string;
@@ -17,10 +15,12 @@ interface AboutProductProps {
 
 const AboutProduct: React.FC<AboutProductProps> = (props) => {
     const [selectedItem, setSelectedItem] = useState<number>(0);
-    const [description,setDescription] = useState<string>(props.content[0].description);
+    const [description, setDescription] = useState<string>(
+        props.content[0].description
+    );
     const handleItemClick = (index: number) => {
         setSelectedItem(index);
-        setDescription(props.content[index].description)
+        setDescription(props.content[index].description);
     };
     useEffect(() => {
         const interval = setInterval(() => {
@@ -72,7 +72,7 @@ const AboutProduct: React.FC<AboutProductProps> = (props) => {
                                     ></i>
                                 </div>
                             ))}
-                            <p className="mt-3">{description}</p>
+                            <p className="mt-3 mb-3">{description}</p>
 
                             <button className="button-primary">
                                 <span className="me-2">Learn more</span>{" "}
